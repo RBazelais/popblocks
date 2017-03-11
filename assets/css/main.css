@@ -1,0 +1,42 @@
+/********* Styles ********/
+
+#container{
+	margin: auto;
+	/*background-color: #dedede;*/
+
+
+	/* Flex rules */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+canvas{
+
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/********* Media Queries based on screen size *********/
+@media screen and (min-width: 0px) {
+  #popblocks     { display: block; width: 640px; height: 480px; margin: 1em auto; border: 1px solid #AAA; }
+  #canvas       { display: block; width: 640px; height: 480px; }
+
+}
+
+@media screen and (min-width: 1200px) {
+  #popblocks     { width: 800px; height: 600px; }
+  #canvas       { width: 800px; height: 600px; }
+
+}
+
+@media screen and (min-width: 1600px) {
+  #popblocks     { width: 1024px; height: 768px; }
+  #canvas       { width: 1024px; height: 768px; }
+
+}
