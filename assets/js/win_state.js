@@ -1,33 +1,3 @@
-
-/*
-var Win_State = {
-
-    preload : function() {
-        // Load the needed image for this game screen.
-        game.load.image('win_state', './assets/images/win_state.png');
-    },
-
-    create : function() {
-
-        // Creates button to start game like in Menu
-        this.add.button(0, 0, 'Go To Main Menu', this.mainMenu, this);
-
-        // Add text with information about the score from last level
-        game.add.text(205, 350, "SCORE: ", { font: "bold 34px Arial", fill: "#46c0f9", align: "center"});
-        game.add.text(350, 350, score.toString(), { font: "bold 34px Arial", fill: "#ffffff", align: "center" });
-
-    },
-
-    mainMenu: function () {
-
-        // Change the state 
-        this.state.start('Menu');
-
-    }
-
-};
-*/
-
 "use strict";
 
 var preload,
@@ -48,7 +18,7 @@ var Win_State = { preload : preload, create : create };
 
 function preload() {
 
-    
+
     "use strict";
 
     game.load.image('win_State', './assets/images/sharedBackground.png');
@@ -60,7 +30,7 @@ function create() {
     //Adds button to contiue
 
     game.add.image(0, 0, 'win_State', goToMainMenu_Win);
- 
+
 	//Text Styles
 	winTextStyle = { font: "bold 28px Arial", fill: "#ffffff", align: "center"};
 	winTextStyle_Answer = { font: "bold 28px Arial", fill: "#fde041", align: "center"};
@@ -95,8 +65,7 @@ function goToMainMenu_Win() {
 }
 
 function goToMainMenu_Win() {
-    
-    
+
+
     game.state.start('MainMenu');
 }
-    
